@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Work</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body id="bodyWork" class="fullpage slide-up">
+    <!-- NAV starts -->
+    <div class="navspace">
+      <div class="nav-line"></div>
+      <div class="TWicon">
+        <a href="{{ url_for('indexPage.home') }}">HOME</a>
+      </div>
+      <div class="copyright">© | 2024</div>
+    </div>
+    <!-- TITLE starts -->
+    <header>
+      <div class="experienceTitle">MY EXPERTISE</div>
+    </header>
+    <div class="divisionExper">
+      <div>
+        <div class="expertisetitle">Software Development</div>
+        <div class="expertisecontent">
+          Experience in Python backend Development using Flask and Django
+          Frameworks.
+        </div>
+      </div>
+      <div>
+        <div class="expertisetitle">Frontend Design</div>
+        <div class="expertisecontent">
+          Passionate about design in general, experience on HTML, CSS, and React
+          Native.
+        </div>
+      </div>
+      <div>
+        <div class="expertisetitle">Mobile App</div>
+        <div class="expertisecontent">
+          Hybrid mobile apps are my way to go on Flutterflow framework.
+        </div>
+      </div>
+    </div>
+    <div class="divisionWork">
+      <div class="myWork">
+        <div>My Work</div>
+      </div>
+      <div class="vertical-line fadein"></div>
+      <div class="expertisecontent">
+        <a class="workTitle" href="{{ url_for('AIBensPage.aibeanspage') }}"
+          >AIBEANS</a
+        ><br />
+        <a class="workTitle" href="{{ url_for('indexPage.home') }}">NURVIX</a
+        ><br />
+        <a class="workTitle" href="{{ url_for('indexPage.home') }}">SIGN UP</a
+        ><br />
+        <a class="workTitle" href="{{ url_for('indexPage.home') }}"
+          >AUCONNECT</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
