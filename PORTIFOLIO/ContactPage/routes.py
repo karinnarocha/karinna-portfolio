@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for, current_app
+from flask_mail import Message
 from PORTIFOLIO import mail
 
 contactPage = Blueprint('contactPage', __name__)
@@ -6,17 +7,19 @@ contactPage = Blueprint('contactPage', __name__)
 @contactPage.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
-        email = request.form['email']
         subject = request.form['subject']
-        message = request.form['message']
+        sender = request.form['email']
+        body = request.form['message']
 
-        msg = Message(subject,
-                      sender=email,
-                      recipients=[current_app.config['MAIL_DEFAULT_SENDER']])
-        msg.body = message
-        mail.send(msg)
+        try:
+            msg = Message(subject, sender=sender, recipients=["karinna.rocha2@gmail.com"])
+            msg.body = body
+            mail.send(msg)
+            flash('Message sent successfully!')
+        except Exception as e:
+            flash(f'An error occurred: {str(e)}')
+            print(f'Error: {str(e)}')
 
-        flash('Email sent successfully!', 'success')
         return redirect(url_for('contactPage.contact'))
     
     return render_template('Contact.html')
