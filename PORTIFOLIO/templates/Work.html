@@ -20,48 +20,134 @@
       <div class="copyright">© | 2024</div>
     </div>
     <!-- TITLE starts -->
-    <header>
+    <div class="ExpertiseSession">
       <div class="experienceTitle">MY EXPERTISE</div>
-    </header>
-    <div class="divisionExper">
-      <div>
-        <div class="expertisetitle">Software Development</div>
-        <div class="expertisecontent">
-          Experience in Python backend Development using Flask and Django
-          Frameworks.
+      <div class="divisionExper">
+        <div>
+          <div class="expertisetitle">Software Development</div>
+          <div class="expertisecontent">
+            Experience in Python backend Development using Flask and Django
+            Frameworks.
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="expertisetitle">Frontend Design</div>
-        <div class="expertisecontent">
-          Passionate about design in general, experience on HTML, CSS, and React
-          Native.
+        <div>
+          <div class="expertisetitle">Frontend Design</div>
+          <div class="expertisecontent">
+            Passionate about design in general, experience on HTML, CSS, and
+            React Native.
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="expertisetitle">Mobile App</div>
-        <div class="expertisecontent">
-          Hybrid mobile apps are my way to go on Flutterflow framework.
+        <div>
+          <div class="expertisetitle">Mobile App</div>
+          <div class="expertisecontent">
+            Hybrid mobile apps are my way to go on Flutterflow framework.
+          </div>
         </div>
       </div>
     </div>
-    <div class="divisionWork">
-      <div class="myWork">
-        <div>My Work</div>
+    <div class="WorkTitlesSession">
+      <div class="divisionWork">
+        <div class="myWork">
+          <div>My work</div>
+        </div>
+        <div class="vertical-line fadein"></div>
+        <div class="expertisecontent">
+          <a class="workTitle" data-scroll="nurvix">NURVIX</a
+          ><span> Web development</span><br />
+          <a class="workTitle" data-scroll="signup">SIGN UP</a
+          ><span> Web Development</span><br />
+          <a class="workTitle" data-scroll="fitness">FITNESS</a
+          ><span> Web Development</span><br />
+          <a class="workTitle" data-scroll="aibeans">AIBEANS</a
+          ><span> Mobile Development</span><br />
+          <a class="workTitle" data-scroll="aibeans">JIU-JITSU</a
+          ><span> Photopraphy</span>
+        </div>
       </div>
-      <div class="vertical-line fadein"></div>
-      <div class="expertisecontent">
-        <a class="workTitle" href="{{ url_for('AIBensPage.aibeanspage') }}"
-          >AIBEANS</a
-        ><br />
-        <a class="workTitle" href="{{ url_for('indexPage.home') }}">NURVIX</a
-        ><br />
-        <a class="workTitle" href="{{ url_for('indexPage.home') }}">SIGN UP</a
-        ><br />
-        <a class="workTitle" href="{{ url_for('indexPage.home') }}"
-          >AUCONNECT</a
-        >
+    </div>
+    <div class="ImageSession">
+      <div class="experienceTitle">Web Development</div>
+      <div class="ImageContainer" data-section="nurvix">
+        <img
+          src="../static/uploads/nurvix_page.JPG"
+          alt="NurVIX Page"
+          class="imageWebsite"
+        />
+        <p class="image__overlay hoverOverImages">
+          <span>NurVIX - Full stack </span>
+          <br />
+          Specs: Python (Flask), HTML, CSS <br />Deployed: Godaddy
+          <a href="https://nurvix.live" target="_blank">NurVIX website</a>
+        </p>
       </div>
+      <div class="ImageContainer" data-section="signup">
+        <img
+          src="../static/uploads/Mercy_page.JPG"
+          alt="Sign Up Page"
+          class="imageWebsite"
+        />
+        <p class="image__overlay hoverOverImages">
+          <span>Sign Up Registration - Full Stack</span>
+          <br />
+          <span>Specs: Python(Django), HTML, CSS</span><br />
+          <span>Database: SQLite Built in</span>
+        </p>
+      </div>
+      <div class="ImageContainer" data-section="fitness">
+        <img
+          src="../static/uploads/Daniellysfitness.PNG"
+          alt="Fitness Page"
+          class="imageWebsite"
+        />
+        <div class="image__overlay hoverOverImages">
+          <span>Danielly's Fitness - Front end</span>
+          <br />
+          <p>Specs: PHP, HTML, CSS <br />Deployed: Wordpress</p>
+          <a href="https://daniellysfitness.com" target="_blank"
+            >Danielly's Fitness website</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="mobileappSession" data-section="aibeans">
+      <div class="experienceTitle">Mobile Application</div>
+      <div class="mobileAppSession">
+        <video class="VideoAIBeans" loop autoplay muted>
+          <source src="../static/uploads/AIBEANS.mov" type="video/mp4" />
+        </video>
+        <div class="AIBeansbox">
+          <div class="AIBeansdescription fade-in">
+            <p>
+              <span>AIBeans - Full Stack</span><br /><br />
+              <span>
+                Specs:<br />
+                Pyton, React Native</span
+              >
+              <br />Deployed: <br />Heroku, Apple Store(test mode)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="PhotographySession">
+      <div class="experienceTitle">Photography</div>
+      <div class="photographygalery">Coming soon!</div>
     </div>
   </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a[data-scroll]").forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const section = this.getAttribute("data-scroll");
+        const target = document.querySelector(
+          `.ImageContainer[data-section="${section}"]`
+        );
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  });
+</script>
