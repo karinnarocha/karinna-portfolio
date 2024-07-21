@@ -1,1 +1,3 @@
-web: gunicorn PORTIFOLIO:app
+web: gunicorn PORTIFOLIO:create_app()
+
+
