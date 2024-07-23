@@ -231,7 +231,7 @@ textarea {
     padding: 10px;
 }
 .vertical-line {
-    width: 5px;
+    width: 6px;
     background-color: rgb(228, 227, 226);
     margin: 0 20px;
   }
@@ -515,7 +515,7 @@ textarea {
     }
 }
 .fadein {
-    animation: fadein 3s forwards;
+    animation: fadein 5s forwards;
 }
 @keyframes slideUp {
     0% {
