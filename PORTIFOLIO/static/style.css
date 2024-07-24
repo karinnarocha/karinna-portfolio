@@ -161,6 +161,7 @@ textarea {
     flex-direction: row;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .divisionWork{
     width: 100%;
@@ -209,8 +210,6 @@ textarea {
     color: rgb(228, 227, 226);
     font-family: FiraCode;
     font-size: 20px;
-    text-align: left;
-    float: left;
     padding: 10px;
 }
 .vertical-line {
@@ -249,7 +248,7 @@ textarea {
 }
 .mobileappSession{
     padding-top: 25%;
-    padding-bottom: 100%;
+    padding-bottom: 25%;
 }
 /*VIDEO STYLING*/
 .VideoAIBeans{
@@ -282,7 +281,7 @@ textarea {
 }
 .PhotographySession{
     padding-bottom: 400px;
-    padding-top: 100px;
+
 }
 .photographygalery{
     font-family: FiraCode;
@@ -508,7 +507,6 @@ textarea {
 /* --------------- work page ------------- */
 .divisionExper {
     flex-direction: column;
-    
 }
 
 .divisionWork{
@@ -518,9 +516,7 @@ textarea {
     flex-direction: column;
     row-gap: 100px; 
 }
-.myWork{
-    justify-content: center;
-}
+
 
 /* --------------- about page ------------- */
 .photoadjust{
