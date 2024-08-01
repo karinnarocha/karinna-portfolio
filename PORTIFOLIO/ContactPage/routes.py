@@ -8,12 +8,21 @@ contactPage = Blueprint('contactPage', __name__)
 def contact():
     if request.method == 'POST':
         subject = request.form['subject']
-        sender = request.form['email']
+        user_email = request.form['email']
         body = request.form['message']
 
         try:
-            msg = Message(subject, sender=sender, recipients=["karinna.rocha2@gmail.com"])
-            msg.body = body
+            # Set a no-reply address as the sender
+            no_reply_address = "no-reply@example.com"  # Replace with your no-reply address
+
+            # Create the message
+            msg = Message(subject, sender=no_reply_address, recipients=["karinna.rocha2@gmail.com"])
+            msg.body = f"From: {user_email}\n\n{body}"
+
+            # Set the reply-to to the user's email
+            msg.reply_to = user_email
+
+            # Send the email
             mail.send(msg)
             flash('Message sent successfully!')
         except Exception as e:
