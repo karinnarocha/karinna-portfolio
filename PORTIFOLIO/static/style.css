@@ -85,20 +85,9 @@ textarea {
 
 /* --------INDEX PAGE -----------*/
 
-.session-Right, .session-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 80px;
-}
+
 .session-Right {
     float: right;
-	padding-right: 10%;
-}
-.session-left {
-	padding-left: 10%;
-
 }
 .nurvixHeader {
     color: rgb(228, 227, 226);
@@ -132,29 +121,32 @@ textarea {
 
 /*-------------DESCRIPTION INDEX------------*/
 .developerHeader{
-    width: 50%;
-    font-size: 60px;
+    width: 100%;
+    font-size: 40px;
     color: rgb(228, 227, 226);
-    position: relative;
-    text-align: right;
     font-family: FiraCode;
-	margin-top: 220px;
+	padding-top: 130px;
+    
 }
 
 .Menu-link{
-    font-size: 60px;
+    width: 100%;
+    font-size: 50px;
     color: #44413c;
-    position: relative;
-    text-align: left;
     font-family: FiraCode;
-	margin-top: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    padding-top: 10%;
 }
 
 
 /*--------------- WORK PAGE ---------------*/
 .ExpertiseSession{
-    padding-top: 25%;
-    padding-bottom: 27%;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 .divisionExper{
     width: 100%;
@@ -163,12 +155,6 @@ textarea {
     justify-content: center;
     flex-wrap: wrap;
 }
-.divisionWork{
-    width: 100%;
-    flex-direction: row;
-    display: flex;
-}
-
 .experienceTitle{
     width: 100%;
     font-size: 60px;
@@ -177,23 +163,28 @@ textarea {
     padding-bottom: 50px;
 }
 .WorkTitlesSession{
-    padding-bottom: 400px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-color: #fff;
 }
-
+.divisionWork{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+}
 .myWork{
     width: 100%;
     font-size: 70px;
-    color: rgb(228, 227, 226);
+    color: rgb(136, 136, 136);
     font-family: GreatVibes;
     text-align: end;
     align-self: center;
-    padding-right: 50px;
-    padding-bottom: 20px;
+    padding-right: 40px;
 }
 .workTitle{
     width: 100%;
     font-size: 100px;
-    color: rgb(228, 227, 226);
+    color: rgb(136, 136, 136);
     font-family: FiraCode;
     font-weight: bold;
 }
@@ -207,7 +198,7 @@ textarea {
 }
 .expertisecontent{
     width: 100%;
-    color: rgb(228, 227, 226);
+    color:rgb(228, 227, 226);
     font-family: FiraCode;
     font-size: 20px;
     padding: 10px;
@@ -215,7 +206,7 @@ textarea {
 }
 .Worklist{
     width: 100%;
-    color: rgb(228, 227, 226);
+    color: rgb(136, 136, 136);
     font-family: FiraCode;
     font-size: 20px;
     padding: 10px;
@@ -223,9 +214,15 @@ textarea {
 }
 .vertical-line {
     width: 6px;
-    background-color: rgb(228, 227, 226);
+    background-color: rgb(136, 136, 136);
     margin: 0 20px;
   }
+
+.ImageSession{
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
 /*FOTOS STYLING*/
 
 .ImageContainer {
@@ -256,14 +253,14 @@ textarea {
 	backdrop-filter: blur(5px);
 }
 .mobileappSession{
-    padding-top: 25%;
-    padding-bottom: 25%;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 /*VIDEO STYLING*/
 .VideoAIBeans{
     height: 700px;
 }
-.mobileAppSession{
+.AppSession{
     display: flex;
     flex-direction: row;
     padding-top: 100px;
@@ -289,7 +286,8 @@ textarea {
     
 }
 .PhotographySession{
-    padding-bottom: 400px;
+    padding-top: 20%;
+    padding-bottom: 20%;
 
 }
 .photographygalery{
@@ -435,7 +433,6 @@ textarea {
 	.session-left {
         float: none;
         text-align: center;
-		float: left;
     }
     .nurvixHeader {
         font-size: 150px;
@@ -455,7 +452,6 @@ textarea {
 	.session-left {
         text-align: center;
         align-items: center;
-		float: left;
     }
     .nurvixHeader {
         font-size: 120px;
@@ -476,7 +472,6 @@ textarea {
 	.session-left {
         float: none;
         text-align: center;
-		float: left;
     }
     .nurvixHeader {
         font-size: 100px;
@@ -580,6 +575,42 @@ textarea {
         opacity: 1;
     }
 }
+
+@keyframes FadeIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* Animation definitions */
+@keyframes fadeInUp {
+    from {
+      transform: translateY(0px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(100px);
+      opacity: 1;
+    }
+  }
+  
+  /* Initial state for elements to animate */
+  .animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+  
+  /* Visible state to trigger animation */
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 0.2s ease-out forwards;
+  }
+
 .fadein {
     animation: fadein 5s forwards;
 }
@@ -603,16 +634,6 @@ textarea {
     }
 }
 
-@keyframes slideInLeft {
-    from {
-        transform: translateX(0);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(50%);
-        opacity: 2;
-    }
-}
 @keyframes slideUp {
     from {
         transform: translateY(10%);
@@ -648,10 +669,8 @@ textarea {
     animation: slideInRight 3s ease-in-out forwards;
 }
 
-.animated-textLeft {
-    display: inline-block;
-    white-space: nowrap;
-    animation: slideInLeft 3s ease-in-out forwards;
+.animationfading {
+    animation: FadeIn 1s ease-in-out forwards;
 }
 .animated-textUp{
     display: inline-block;

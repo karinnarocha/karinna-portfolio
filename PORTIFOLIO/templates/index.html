@@ -30,37 +30,29 @@
 
     <!-- TITLE starts -->
     <header>
-      <a href="https://www.twitch.tv/nurvix" class="nurvixHeader">NurVIX</a>
-      <div class="karinnaHeader animated-textRight4s">Karinna Rocha</div>
+      <a
+        href="https://www.twitch.tv/nurvix"
+        class="nurvixHeader animationfading"
+        >NurVIX</a
+      >
+      <div class="karinnaHeader animationfading">Karinna Rocha</div>
     </header>
 
     <!-- Body starts -->
-    <div class="session-Right">
-      <div class="developerHeader animated-textRight3s">
-        <div>Software Developer</div>
-      </div>
+    <div class="developerHeader animationfading">
+      <div>Software Developer</div>
     </div>
-    <div class="session-left">
-      <div class="Menu-link">
-        <div>
-          <a href="{{ url_for('workPage.workpage') }}" class="animated-textLeft"
-            >Work</a
-          >
-        </div>
-        <div>
-          <a
-            href="{{ url_for('aboutPage.aboutpage') }}"
-            class="animated-textLeft"
-            >About</a
-          >
-        </div>
-        <div>
-          <a
-            href="{{ url_for('contactPage.contact') }}"
-            class="animated-textLeft"
-            >Contact</a
-          >
-        </div>
+    <div class="Menu-link animationfading">
+      <div>
+        <a href="{{ url_for('workPage.workpage') }}">Work</a>
+      </div>
+      <div>●</div>
+      <div>
+        <a href="{{ url_for('aboutPage.aboutpage') }}">About</a>
+      </div>
+      <div>●</div>
+      <div>
+        <a href="{{ url_for('contactPage.contact') }}">Contact</a>
       </div>
     </div>
   </body>

@@ -10,7 +10,7 @@
       href="{{ url_for('static', filename='style.css') }}"
     />
   </head>
-  <body id="bodyWork" class="fullpage slide-up">
+  <body id="bodyWork" class="fullpage">
     <!-- NAV starts -->
     <div class="navspace">
       <div class="nav-line"></div>
@@ -20,7 +20,7 @@
       <div class="copyright">© | 2024</div>
     </div>
     <!-- TITLE starts -->
-    <div class="ExpertiseSession">
+    <div class="ExpertiseSession animate-on-scroll">
       <div class="experienceTitle">MY EXPERTISE</div>
       <div class="divisionExper">
         <div class="expertisetitle">Software Development</div>
@@ -39,14 +39,14 @@
         </div>
       </div>
     </div>
-    <div class="WorkTitlesSession">
+    <div class="WorkTitlesSession animate-on-scroll">
       <div class="divisionWork">
         <div class="myWork">
           <div>My work</div>
         </div>
         <div class="vertical-line fadein"></div>
         <div class="Worklist">
-          <a class="workTitle" data-scroll="nurvix">NURVIX</a><br /><span></span>
+          <a class="workTitle" data-scroll="nurvix">NURVIX</a><br />
             Web development</span
           ><br />
           <a class="workTitle" data-scroll="signup">SIGN UP</a
@@ -62,7 +62,7 @@
     </div>
     <div class="ImageSession">
       <div class="experienceTitle">Web development</div>
-      <div class="ImageContainer" data-section="nurvix">
+      <div class="ImageContainer animate-on-scroll" data-section="nurvix">
         <img
           src="../static/uploads/nurvix_page.JPG"
           alt="NurVIX Page"
@@ -75,7 +75,7 @@
           <a href="https://nurvix.live" target="_blank">NurVI X website</a>
         </p>
       </div>
-      <div class="ImageContainer" data-section="signup">
+      <div class="ImageContainer animate-on-scroll" data-section="signup">
         <img
           src="../static/uploads/Mercy_page.JPG"
           alt="Sign Up Page"
@@ -88,7 +88,7 @@
           <span>Database: SQLite Built in</span>
         </p>
       </div>
-      <div class="ImageContainer" data-section="fitness">
+      <div class="ImageContainer animate-on-scroll" data-section="fitness">
         <img
           src="../static/uploads/Daniellysfitness.PNG"
           alt="Fitness Page"
@@ -104,9 +104,9 @@
         </div>
       </div>
     </div>
-    <div class="mobileappSession" data-section="aibeans">
+    <div class="mobileappSession animate-on-scroll" data-section="aibeans">
       <div class="experienceTitle">Mobile Application</div>
-      <div class="mobileAppSession">
+      <div class="AppSession">
         <video class="VideoAIBeans" loop autoplay muted>
           <source src="../static/uploads/AIBEANS.mov" type="video/mp4" />
         </video>
@@ -124,7 +124,7 @@
         </div>
       </div>
     </div>
-    <div class="PhotographySession" data-section="jiujitsu">>
+    <div class="PhotographySession animate-on-scroll" data-section="jiujitsu">
       <div class="experienceTitle">Photography</div>
       <div class="photographygalery">Coming soon!</div>
     </div>
@@ -132,6 +132,30 @@
 </html>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
+    const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
+
+    function setOpacity() {
+      elementsToAnimate.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        const elementTop = rect.top;
+        const elementHeight = rect.height;
+        const windowHeight = window.innerHeight;
+
+        if (elementTop >= 0 && elementTop <= windowHeight) {
+          // Calculate the ratio of the element visible in the viewport
+          const visibility = Math.min((windowHeight - elementTop) / elementHeight, 1);
+          element.style.opacity = visibility;
+        } else if (elementTop < 0) {
+          // When scrolling past the element
+          const visibility = Math.max(1 - Math.abs(elementTop) / elementHeight, 0);
+          element.style.opacity = visibility;
+        } else {
+          element.style.opacity = 0;
+        }
+      });
+    }
+
+    // Smooth scrolling for links
     document.querySelectorAll("a[data-scroll]").forEach((link) => {
       link.addEventListener("click", function (e) {
         e.preventDefault();
@@ -144,5 +168,8 @@
         }
       });
     });
+
+    window.addEventListener("scroll", setOpacity);
+    setOpacity(); // Set initial opacity based on current scroll position
   });
 </script>
