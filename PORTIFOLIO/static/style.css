@@ -380,7 +380,7 @@ textarea {
     display: flex;
     justify-content: left;
     font-size: 150px;
-    font-family:Great Vibes;
+    font-family: GreatVibes;
     padding-top: 10%;
     padding-bottom: 8%;
     padding-left: 15%;
@@ -388,7 +388,7 @@ textarea {
 }
 .ContactContent{
     width: 100%;
-    font-family: Fira Code;
+    font-family: FiraCode;
     font-size: 20px;
     padding-bottom: 80px;
     color: rgb(63, 60, 56);
@@ -563,6 +563,7 @@ textarea {
     font-size: 80px;
     padding-top: 150px;
     padding-bottom: 80px;
+    font-family: GreatVibes;
 }
 .ContactContent{
     font-size: 15px;
