@@ -68,7 +68,6 @@ textarea {
 
 .fullpage {
     text-align: center;
-    width: 100%;
 }
 
 .sandbackground {
@@ -150,10 +149,7 @@ textarea {
 }
 .divisionExper{
     width: 100%;
-    flex-direction: row;
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .experienceTitle{
     width: 100%;
@@ -197,7 +193,6 @@ textarea {
 
 }
 .expertisecontent{
-    width: 100%;
     color:rgb(228, 227, 226);
     font-family: FiraCode;
     font-size: 20px;
@@ -265,16 +260,14 @@ textarea {
     flex-direction: row;
     padding-top: 100px;
     justify-content: space-evenly;
-    
-
 }
 .AIBeansbox{
     background-color:rgb(136, 136, 136);
     opacity: 1;
     border-radius: 70px;
-    width: 380px;
-    align-items:center ;
-    justify-content: center;
+    height: 100%;
+    align-self: center;
+
 }
 .AIBeansdescription{
     font-family: FiraCode;
@@ -460,6 +453,24 @@ textarea {
     .karinnaHeader {
         font-size: 140px;
     }
+    .Menu-link {
+        font-size: 40px;
+        flex-direction: column;
+        padding-top: 150px;
+        gap: 10%;
+        
+    }
+    .divisionWork{
+        flex-direction: column;
+    }
+    .myWork{
+        text-align: center;
+        justify-content: center;
+    }
+    .AppSession{
+        flex-direction: column;
+        row-gap: 100px; 
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -480,6 +491,14 @@ textarea {
     .karinnaHeader {
         font-size: 120px;
     }
+    .divisionWork{
+        flex-direction: column;
+    }
+    .AppSession{
+        flex-direction: column;
+        row-gap: 100px; 
+    }
+    
 }
 @media only screen and (max-width: 430px) {
     /* --------------- nav ------------- */
@@ -501,6 +520,10 @@ textarea {
     }
 	.Menu-link {
         font-size: 30px;
+        flex-direction: column;
+        padding-top: 150px;
+        gap: 10%;
+        
     }
     .nurvixHeader {
         font-size: 80px;
@@ -511,18 +534,24 @@ textarea {
     }
 
 /* --------------- work page ------------- */
-.divisionExper {
-    flex-direction: column;
-}
+    .divisionExper {
+        flex-direction: column;
+    }
 
-.divisionWork{
-    flex-direction: column;
-}
-.mobileAppSession{
-    flex-direction: column;
-    row-gap: 100px; 
-}
-
+    .divisionWork{
+        flex-direction: column;
+    }
+    .AppSession{
+        flex-direction: column;
+        row-gap: 100px; 
+    }
+    .workTitle{
+        font-size: 70px;
+    }
+    .myWork{
+        text-align: center;
+        justify-content: center;
+    }
 
 /* --------------- about page ------------- */
 .photoadjust{
@@ -589,11 +618,11 @@ textarea {
 /* Animation definitions */
 @keyframes fadeInUp {
     from {
-      transform: translateY(0px);
+      transform: translateY(20px);
       opacity: 0;
     }
     to {
-      transform: translateY(100px);
+      transform: translateY(0);
       opacity: 1;
     }
   }
