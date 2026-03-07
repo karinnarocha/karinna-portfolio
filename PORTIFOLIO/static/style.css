@@ -1,4 +1,3 @@
-
 /* --------------- FONTS ------------- */
 
 
@@ -6,24 +5,29 @@
     font-family: 'Italiana';
     src: url('fonts/Italiana-Regular.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'GreatVibes';
     src: url('fonts/GreatVibes-Regular.ttf') format('truetype');
 }
+
 /* ------------ GLOBAL -------- */
-body{
+body {
     font-family: Italiana;
     color: rgb(105, 100, 100);
 }
-a{
+
+a {
     color: inherit;
     text-decoration: none;
 }
+
 a:hover {
     font-style: italic;
-}   
+}
+
 a:visited {
-    color: inherit; 
+    color: inherit;
     text-decoration: none;
 }
 
@@ -33,37 +37,40 @@ form {
     flex-direction: column;
     gap: 15px;
     text-align: center;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
+
 input[type="email"],
 input[type="text"],
 textarea {
-    border-radius: 15px; 
-    padding: 10px; 
+    border-radius: 15px;
+    padding: 10px;
     border: 1px solid #ccc;
     font-size: 16px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     height: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-img{
+
+img {
     height: auto;
 }
 
 /*-------------- NAV--------------*/
 
 
-.navspacecontainer{
+.navspacecontainer {
     height: 10%;
     width: 100vw;
     position: fixed;
     z-index: 1000;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-image:  linear-gradient(80deg, rgb(160, 211, 211), rgb(235, 194, 160));
+    background-image: linear-gradient(80deg, rgb(160, 211, 211), rgb(235, 194, 160));
 }
-.navspace{
+
+.navspace {
     display: flex;
     align-items: center;
     padding-right: 2%;
@@ -72,6 +79,7 @@ img{
     color: #44413c;
     font-size: 25px;
 }
+
 .nav-line {
     width: 250px;
     height: 2px;
@@ -83,15 +91,15 @@ img{
 /*------------- BODY------------*/
 
 
-.fullpage{
+.fullpage {
     width: 100%;
-    background-image:  linear-gradient(80deg, rgb(160, 211, 211), rgb(235, 194, 160));
+    background-image: linear-gradient(80deg, rgb(160, 211, 211), rgb(235, 194, 160));
 }
 
 
 /* --------INDEX PAGE -----------*/
 
-.firstSection{
+.firstSection {
     padding-top: 25%;
     height: 60vh;
 }
@@ -103,16 +111,17 @@ img{
     font-size: 130px;
 
 }
-.developerHeader{
+
+.developerHeader {
     width: 100%;
     font-size: 40px;
     text-shadow: rgb(228, 227, 226) 1px 0 5px;
-	padding-top: 5%;
+    padding-top: 5%;
     text-align: center;
     position: relative;
 }
 
-.Menu-link{
+.Menu-link {
     font-size: 50px;
     font-weight: bold;
     text-shadow: rgb(228, 227, 226) 1px 0 3px;
@@ -124,20 +133,23 @@ img{
     padding-top: 5%;
     position: relative;
 }
+
 /*---------------CASE STUDIES-----------------*/
 
-.StudycaseTitleSection{
+.StudycaseTitleSection {
     height: 55vh;
     padding-top: 15%;
 
 }
-.StudycaseTitle{
+
+.StudycaseTitle {
     text-align: center;
     font-weight: 800;
     color: rgb(248, 227, 227);
     font-size: 130px;
 }
-.StudyCaseSubTitle{
+
+.StudyCaseSubTitle {
     text-align: center;
     color: #fff;
     font-size: 30px;
@@ -145,31 +157,37 @@ img{
     padding-right: 10%;
     font-weight: 500;
 }
-.StudycaseButton{
+
+.StudycaseButton {
     width: 100%;
     display: flex;
     justify-content: center;
     padding-bottom: 12%;
 }
-.CaseStudyContainer{
+
+.CaseStudyContainer {
     display: flex;
     flex-direction: row;
     width: 100vw;
 }
-.CaseStudyCenter{
+
+.CaseStudyCenter {
     width: 80vw;
 }
-.CaseStudyEdges{
+
+.CaseStudyEdges {
     width: 20vw;
 }
+
 /*--------------- WORK PAGE ---------------*/
-.ExpertiseSession{
+.ExpertiseSession {
     height: 60vh;
     display: flex;
     align-items: center;
-    
+
 }
-.divisionExper{
+
+.divisionExper {
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -177,17 +195,20 @@ img{
     display: flex;
     flex-direction: row;
     gap: 5%;
-    
+
 }
-.Squarespace{
-    border:  5px solid rgb(105, 100, 100);
+
+.Squarespace {
+    border: 5px solid rgb(105, 100, 100);
     background-color: #ffffff5f;
     height: 320px;
     width: 250px;
     padding: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
 
 }
-.experienceTitle{
+
+.experienceTitle {
     width: 100%;
     font-size: 75px;
     color: rgb(105, 100, 100);
@@ -195,12 +216,15 @@ img{
     padding-bottom: 10%;
     text-align: center;
 }
-.WorkTitlesSession{
+
+.WorkTitlesSession {
     background-color: #fff;
     height: 100vh;
     position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
-.divisionWork{
+
+.divisionWork {
     width: 100%;
     height: 100%;
     display: flex;
@@ -208,7 +232,8 @@ img{
     align-items: center;
     justify-content: center;
 }
-.myWork{
+
+.myWork {
     width: 100%;
     font-size: 70px;
     color: rgb(105, 100, 100);
@@ -217,13 +242,15 @@ img{
     align-self: center;
     padding-right: 40px;
 }
-.workTitle{
+
+.workTitle {
     width: 100%;
     font-size: 80px;
     color: rgb(105, 100, 100);
 
 }
-.expertisetitle{
+
+.expertisetitle {
     padding: 30px 80px 30px 80px;
     color: rgb(105, 100, 100);
 
@@ -231,33 +258,38 @@ img{
     font-size: 25px;
 
 }
-.expertisecontent{
+
+.expertisecontent {
     color: rgb(105, 100, 100);
 
     font-size: 20px;
     padding: 20px;
     text-align: center;
 }
-.IntroProjectMenu{
+
+.IntroProjectMenu {
     height: 50vh;
     padding-left: 15%;
     padding-right: 15%;
     position: relative;
 }
-.IntroTitle{
+
+.IntroTitle {
     text-align: center;
     color: rgb(105, 100, 100);
-    
+
     font-size: 30px;
 }
-.Worklist{
+
+.Worklist {
     width: 100%;
     color: rgb(136, 136, 136);
-    
+
     font-size: 20px;
     padding: 10px;
     text-align: left;
 }
+
 .vertical-line {
     width: 6px;
     background-color: rgb(136, 136, 136);
@@ -266,144 +298,243 @@ img{
 }
 
 .ProjectTitleandlink {
-    display: flex; /* Makes the content a flex container */
-    flex-direction: column; /* Aligns child elements vertically */
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
-    text-align: center; /* Aligns text within the element */
-    margin: 0 auto; /* Centers the div itself within its container */
-    height: 80vh; /* Ensures the height covers its parent if needed */
+    display: flex;
+    /* Makes the content a flex container */
+    flex-direction: column;
+    /* Aligns child elements vertically */
+    justify-content: center;
+    /* Centers content vertically */
+    align-items: center;
+    /* Centers content horizontally */
+    text-align: center;
+    /* Aligns text within the element */
+    margin: 0 auto;
+    /* Centers the div itself within its container */
+    height: 80vh;
+    /* Ensures the height covers its parent if needed */
 }
 
-.divisionStudycase{
+.divisionStudycase {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     position: relative;
 }
-.divisionTemplatesLeft{
+
+.divisionTemplatesLeft {
     display: flex;
     height: 70vh;
     align-items: center;
 }
-.divisionTemplatesRight{
+
+.divisionTemplatesRight {
     display: flex;
     flex-direction: row-reverse;
-    height: 100vh;
+    height: 70vh;
     align-items: center;
 
 }
+
 .project-title {
-    font-size: 50px; 
-    
+    font-size: 50px;
+
     color: rgb(105, 100, 100);
     text-align: center;
-  }
-  
+}
+
 .project-details-right {
     align-self: center;
-    
+
     color: rgb(105, 100, 100);
     font-size: 30px;
     position: relative;
     padding-right: 5rem;
-  }
+}
 
 /*--------------- FOOTER ---------------*/
 
-.Spacefooter{
-    height: 40vh;
-    background-color: rgb(189, 176, 153);
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    overflow: hidden;
-}
-.flexLeftsideFooter{
-    display: flex;
-    flex-direction: column;
-    float: left;
-    width: 35%;
-    padding-left: 15%;
-    justify-content: center;
-    color: rgb(105, 100, 100);
-}
-.flexRightsideFooter{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-right: 25%;
-    justify-content: center;
-    align-items: end;
-    color: rgb(105, 100, 100);
-}
-  .project-details-left{
-    align-self: center;
-    color:#fff;
-    font-size: 30px;
-    position: relative;
-    text-align: left;
-    padding-left: 5rem;
-  }
-.projectSPECS{
-    text-align: center;
-    color:#fff;
-    font-size: 25px;
-}
-  
-.project-details a {
-color: #1e90ff; 
-text-decoration: none;
+.Spacefooter {
+    background-color: #726f6b;
+    color: #f5f1e8;
+    padding: 60px 12% 25px 12%;
+    margin-top: 80px;
 }
 
-.project-details a:hover {
-text-decoration: underline; 
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footerLeft {
+    flex: 2;
+    min-width: 260px;
+}
+
+.footerLeft h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: Italiana;
+    font-weight: 400;
+}
+
+.footerLeft p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 8px 0;
+    color: #ddd6cb;
+}
+
+.footerLocation {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footerCenter,
+.footerRight {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footerCenter h3,
+.footerRight h3 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    font-family: Italiana;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footerCenter a,
+.footerRight a {
+    display: block;
+    color: #ddd6cb;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.footerCenter a:hover,
+.footerRight a:hover {
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.socialIcons a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #44413c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.socialIcons a:hover {
+    background-color: #ffffff;
+    color: #2f2c28;
+    transform: translateY(-3px);
+}
+
+.footerBottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    font-size: 15px;
+    color: #cfc7bb;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .footerContainer {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .Spacefooter {
+        padding: 50px 8% 20px 8%;
+    }
+
+    .footerLeft h2 {
+        font-size: 28px;
+    }
+
+    .footerLeft p,
+    .footerCenter a,
+    .footerRight a {
+        font-size: 16px;
+    }
 }
 
 /*FOTOS STYLING*/
-.imagedisplay{
+.imagedisplay {
     display: flex;
     flex-direction: row;
 }
-.imageWebsiteRight{
+
+.imageWebsiteRight {
     width: 50vw;
     right: 5%;
     position: relative;
 }
 
-.imageWebsiteLeft{
-   width: 50vw;
-   left: 5%;
-   position: relative;
+.imageWebsiteLeft {
+    width: 50vw;
+    left: 5%;
+    position: relative;
 }
 
-.imageCaseStudyEdges{
+.imageCaseStudyEdges {
     width: 100%;
 }
-.imageCaseStudycenter{
+
+.imageCaseStudycenter {
     width: 300%;
     left: -100%;
     position: relative;
 }
-.StudocaseDescriptionSection{
+
+.StudocaseDescriptionSection {
     margin-top: 15%;
     margin-left: 20%;
     margin-right: 20%;
 }
-.StudyCase-desc{
+
+.StudyCase-desc {
     padding-bottom: 5%;
 }
-.StudyCase-toolsused{
+
+.StudyCase-toolsused {
     margin-bottom: 15%;
 }
-.DescTitleStudyCase{
+
+.DescTitleStudyCase {
     text-align: center;
-    color:#fff;
+    color: #fff;
     font-size: 35px;
 }
-.DescStudyCase{
-    color:#fff;
+
+.DescStudyCase {
+    color: #fff;
     font-size: 25px;
     flex-direction: row;
     display: flex;
@@ -411,8 +542,9 @@ text-decoration: underline;
     justify-content: center;
     gap: 4%;
 }
-.TollsIcons{
-    background-color:rgb(136, 136, 136);
+
+.TollsIcons {
+    background-color: rgb(136, 136, 136);
     letter-spacing: 1px;
     width: 150px;
     height: 50px;
@@ -428,17 +560,19 @@ text-decoration: underline;
 
 
 /*VIDEO STYLING*/
-.VideoAIBeans{
+.VideoAIBeans {
     height: 700px;
 }
-.AppSession{
+
+.AppSession {
     display: flex;
     flex-direction: row;
     padding-top: 100px;
     justify-content: space-evenly;
 }
-.AIBeansbox{
-    background-color:rgb(136, 136, 136);
+
+.AIBeansbox {
+    background-color: rgb(136, 136, 136);
     opacity: 1;
     border-radius: 70px;
     height: 100%;
@@ -448,56 +582,54 @@ text-decoration: underline;
 
 /*---------------ABOUT PAGE -----------------*/
 
-.AboutImage{
-    position: relative;
-    width: 300%;
-    right: 90%;
-    top: 200PX;
-    height: 100%;
+.Aboutmainbody {
+    margin: 0 auto;
+    padding: 5% 15% 2% 15%;
 }
-.Abouttitle{  
-    padding-top: 10%;      
+
+.Abouttitle {
+    padding-top: 10%;
     font-size: 150px;
     font-family: "GreatVibes";
     font-weight: 100;
     position: relative;
+    margin: 0;
 }
-.Aboutmainbody{
-    padding: 5% 15% 2% 15%;  
-}
+
 .AboutSubtitle {
-    font-size:30px;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
-.selfDescription{
+
+.selfDescription {
     font-size: 22px;
     font-weight: 600;
     text-align: left;
-    width: 80%;
+    line-height: 1.7;
+    width: 130%;
 }
-.pagedivision{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+.aboutWrap {
+    display: block;
+}
+
+.AboutImage {
+    float: right;
+    width: 800px;
+    height: auto;
+    shape-outside: url("/static/uploads/photoblank.png");
+    -webkit-shape-outside: url("/static/uploads/photoblank.png");
+    shape-margin: 30px;
+}
+
+.pagedivision {
+    display: block;
     overflow: hidden;
     background-attachment: fixed;
-
 }
 
-@media (max-width: 1000px) {
-.pagedivision{
-    display: flex;
-    flex-direction: column;
-}
-.AboutImage{
-    position: relative;
-    width: 100%;
-    right: 0;
-    top: 100px
-}
-}
-.skillsdescription{
-    width:80%;
+.skillsdescription {
+    width: 80%;
     font-size: 25px;
     font-weight: 600;
     float: left;
@@ -505,11 +637,12 @@ text-decoration: underline;
     padding-left: 2%;
 }
 
-.subTitles{
-    font-size:40px;
+.subTitles {
+    font-size: 40px;
 }
-.divSubTitles{
-    background-image:  linear-gradient(210deg,rgb(160, 211, 211), rgb(235, 194, 160) );
+
+.divSubTitles {
+    background-image: linear-gradient(210deg, rgb(160, 211, 211), rgb(235, 194, 160));
     display: flex;
     flex-direction: column;
     float: left;
@@ -517,31 +650,82 @@ text-decoration: underline;
     padding-left: 15%;
     padding-right: 15%;
 }
-.buttonbox{
+
+.buttonbox {
     padding-top: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
     padding-bottom: 10%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
+
 .button {
-    background-color: #fff ;
+    background-color: #fff;
     letter-spacing: 1px;
     border-radius: 50px;
     font-family: Italiana;
     font-size: 24px;
     font-weight: 400;
     transition: background-color 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
+
 .w-button {
     color: #44413c;
     border: 0;
     padding: 9px 15px;
 }
-.button:hover{
+
+.button:hover {
     background-color: #44413c;
     color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1000px) {
+    .pagedivision {
+        display: block;
+    }
+
+    .Aboutmainbody {
+        padding: 8% 8% 4% 8%;
+    }
+
+    .Abouttitle {
+        font-size: 90px;
+        padding-top: 5%;
+    }
+
+    .AboutSubtitle {
+        font-size: 24px;
+    }
+
+    .selfDescription {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .AboutImage {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 420px;
+        margin: 30px auto;
+        shape-outside: none;
+        -webkit-shape-outside: none;
+    }
+
+    .skillsdescription {
+        width: 100%;
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .divSubTitles {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
 }
 
 /*-------------CONTACT ME--------------*/
@@ -555,13 +739,15 @@ text-decoration: underline;
     padding-left: 15%;
     color: rgb(63, 60, 56);
 }
-.ContactContent{
+
+.ContactContent {
     width: 100%;
     font-size: 20px;
     padding-bottom: 80px;
     color: rgb(63, 60, 56);
     text-align: center;
 }
+
 .contactForm {
     font-size: 30px;
     width: 500px;
@@ -569,90 +755,116 @@ text-decoration: underline;
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
-    margin: 0 auto; /* Center the form horizontally */
+    margin: 0 auto;
+    /* Center the form horizontally */
 }
-.messagebox{
+
+.messagebox {
     height: 200px;
 }
 
 /*--------------BACKGROUND INDEX--------------*/
- 
-#up { 
+
+#up {
     height: 90vh;
     width: 90vh;
     border-radius: 50%;
-    background-image:  linear-gradient(80deg, rgb(177, 111, 155), rgb(161, 139, 114));
+    background-image: linear-gradient(80deg, rgb(177, 111, 155), rgb(161, 139, 114));
     filter: blur(80px);
     animation: up 40s infinite;
 }
+
 #down {
     right: 0;
     height: 90vh;
     width: 90vh;
     border-radius: 50%;
-    background-image:  linear-gradient(80deg, rgb(233, 133, 129), rgb(151, 197, 178) );
+    background-image: linear-gradient(80deg, rgb(233, 133, 129), rgb(151, 197, 178));
     filter: blur(80px);
     animation: down 40s infinite;
 }
+
 #right {
     height: 90vh;
     width: 90vh;
     border-radius: 50%;
-    background-image:  linear-gradient(80deg, #c488cc, rgb(94, 199, 202) );
+    background-image: linear-gradient(80deg, #c488cc, rgb(94, 199, 202));
     filter: blur(80px);
     animation: right 50s infinite;
 }
+
 #left {
-    right: 0; 
+    right: 0;
     align-self: flex-end;
     height: 90vh;
     width: 100vh;
     border-radius: 50%;
-    background-image:  linear-gradient(80deg, rgb(224, 231, 127), rgb(52, 147, 190) );
+    background-image: linear-gradient(80deg, rgb(224, 231, 127), rgb(52, 147, 190));
     filter: blur(80px);
     animation: left 40s infinite;
 }
-#up, #down, #right, #left {
-    animation-duration: 30s; /* Shortened duration */
-    animation-timing-function: ease-in-out; /* Smoother animation */
+
+#up,
+#down,
+#right,
+#left {
+    animation-duration: 30s;
+    /* Shortened duration */
+    animation-timing-function: ease-in-out;
+    /* Smoother animation */
     filter: blur(45px);
     will-change: transform;
     position: absolute;
-    }
+}
+
 @keyframes down {
-    0%, 100% {
+
+    0%,
+    100% {
         top: -100%;
     }
+
     70% {
         top: 90%;
     }
 }
 
 @keyframes up {
-    0%, 100%{
+
+    0%,
+    100% {
         bottom: 0%;
     }
-    70%{
+
+    70% {
         bottom: 100%;
     }
 }
+
 @keyframes right {
-    0%, 100%{
+
+    0%,
+    100% {
         right: -100%;
     }
-    70%{
-        right:700px;
+
+    70% {
+        right: 700px;
     }
 }
 
 @keyframes left {
-    0%, 100%{
+
+    0%,
+    100% {
         left: -100%;
     }
-    70%{
-        left:700px;
+
+    70% {
+        left: 700px;
     }
 }
+
 body {
     position: relative;
     width: 100%;
@@ -665,33 +877,46 @@ body {
 
 /*-----KEYFRAMES ------*/
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
-  }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
 
 @keyframes fadeIn {
-from {
-    opacity: 0;
-    transform: scaleY(0);
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
 }
-to {
-    opacity: 1;
-    transform: scaleY(1);
-}
-}
-  
+
 /*----- typing animation ------*/
 .typing-animation {
-    overflow: hidden; 
-    border-right: .15em solid black; 
+    overflow: hidden;
+    border-right: .15em solid black;
     white-space: nowrap;
     animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
-  }
+}
 
 /* Initial state for elements to ON JAVASCRIPT */
 .hidden {
@@ -699,22 +924,25 @@ to {
     transition: all 3s;
     filter: blur(5px);
 }
+
 .hiddenIMAGES-right {
     opacity: 0;
     transform: translateX(100%);
     transition: all 3s;
-  }
+}
+
 .show {
     opacity: 1 !important;
     filter: blur(0) !important;
     transform: translateX(0) !important;
-  }
+}
+
 /* Initial state for elements to ON JAVASCRIPT images*/
 .hiddenIMAGES {
     opacity: 0;
     transform: translateX(-100%);
-    transition: all 3s  ;
-    }
+    transition: all 3s;
+}
 
 .fadein {
     animation: fadein 3s ease-in-out forwards;
@@ -724,13 +952,15 @@ to {
 .slideRight {
     animation: slideInRight 2s forwards;
 }
+
 .animated-textOpposite {
     animation: slideInOpposite 5s forwards;
 }
+
 /* WORK ANIMATION, SCROW FROM THE SIDES  */
 .imageOffScreen {
     opacity: 0;
-    transform: translateY(50px); 
+    transform: translateY(50px);
     transition: all 0.5s ease-out;
 }
 
@@ -743,12 +973,13 @@ to {
 .animationfading {
     animation: FadeIn 1s ease-in-out forwards;
 }
-.animated-textUp{
+
+.animated-textUp {
     display: inline-block;
     white-space: nowrap;
     animation: slideUp 1s ease-in-out forwards;
 }
-   
+
 
 
 /* Animation definitions */
@@ -762,67 +993,83 @@ to {
     .navspace {
         font-size: 15px;
     }
-    .nav-line {
-        width: 100px;}
 
-    .karinnaHeader{
+    .nav-line {
+        width: 100px;
+    }
+
+    .karinnaHeader {
         top: 180px;
-        font-size:  80px;
+        font-size: 80px;
         position: relative;
     }
-    .firstSection{
+
+    .firstSection {
         height: 100vh;
     }
-    .developerHeader{
+
+    .developerHeader {
         top: 180px;
         position: relative;
     }
-    .Menu-link{
+
+    .Menu-link {
         top: 230px;
     }
-    .divisionExper{
+
+    .divisionExper {
         flex-direction: column;
         height: 100vh;
         padding-top: 15%;
     }
-    .divisionStudycase{
+
+    .divisionStudycase {
         padding-top: 10%;
     }
-    .IntroProjectMenu{
+
+    .IntroProjectMenu {
         margin-top: 60%;
     }
-    .myWork{
+
+    .myWork {
         display: none;
     }
+
     .divisionTemplatesLeft,
-    .divisionTemplatesRight{
+    .divisionTemplatesRight {
         flex-direction: column;
     }
+
     .imageWebsiteRight,
-    .imageWebsiteLeft{
-    height: 40vh;
-    width: 90vw;
+    .imageWebsiteLeft {
+        height: 40vh;
+        width: 90vw;
     }
-    .StudycaseTitle{
-        font-size:  80px;
+
+    .StudycaseTitle {
+        font-size: 80px;
         margin-top: 15%;
     }
-    .StudyCaseSubTitle{
+
+    .StudyCaseSubTitle {
         font-size: 25;
     }
-    .imageCaseStudycenter{
+
+    .imageCaseStudycenter {
         width: 100%;
         left: 15%;
         position: relative;
     }
-    .CaseStudyContainer{
+
+    .CaseStudyContainer {
         display: flex;
         flex-direction: column;
         height: 100vh;
     }
-    .StudocaseDescriptionSection{
+
+    .StudocaseDescriptionSection {
         margin-top: 15%;
         margin-left: 5%;
         margin-right: 5%;
     }
-  }
+}

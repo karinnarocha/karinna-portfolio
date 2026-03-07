@@ -1,117 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Work</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ url_for('static', filename='style.css') }}"
-    />
-  </head>
-  <body class="fullpage">
-    <!-- NAV starts -->
-    <nav class="navspacecontainer">
-      <div class="navspace">
-        <div class="nav-line"></div>
-        <div>
-          <a href="{{ url_for('indexPage.home') }}">HOME</a>
-        </div>
-        <div class="copyright">© | 2024</div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Work</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body class="fullpage">
+  <nav class="navspacecontainer">
+    <div class="navspace">
+      <div class="nav-line"></div>
+      <div>
+        <a href="{{ url_for('indexPage.home') }}">HOME</a>
       </div>
-    </nav>
-    <!-- TITLE starts -->
-     <div>
-      <section class="pagedivision">
-        <div class="Aboutmainbody">
-          <h1 class="Abouttitle animated-textUp">About</h1>
-          <h2 class="AboutSubtitle">
-            Hi! My name is Karinna , where Designing creativity meets
-          </h2>
-          <div class="selfDescription">
-            I’m a designer, builder, and problem solver with a passion for
-            creativity and innovation. My journey has been anything but
-            traditional, and that’s what makes it so exciting.
-            I started my journey in architecture, but life pushed me toward something bigger. I moved to the U.S., became the first in my family to earn an American degree, and discovered a passion for building, not just buildings, but ideas, brands, and digital experiences.
-            <br><br>
-            Over the years, I’ve created and launched projects that truly shaped my path:
-            <br><br>
-            -  Lulu & Remi — a children’s creative brand I designed the marketing and website from scratch, turning it into a successful Shopify e-commerce store reaching all USA in its first week.
-            <br><br>
-            -  NurVIX — my online persona and community, grown to over 3,500 followers, where I connect through gaming, coding, and creativity.
-            <br><br>
-            -  AI Live Translation Tool, a simple but powerful solution auto translate subtitle to what I say, between EN and PT, I built so my community around the world could follow my streams in real time.
-            <br><br>
-            -  Multiple client brands — helping companies grow through design, content, marketing, and clean digital experiences.
-            <br><br>
-            My background in architecture taught me design.
-            <br><br>
-            My career in tech taught me problem-solving.
-            <br><br>
-            And my love for Jiujitsu taught me resilience, discipline, and humility.
-            <br><br>
-            Every project, every challenge, and every step I’ve taken has built who I am today, someone who loves creating, helping others grow, and turning ideas into reality.
-            <br><br>
-            And as I always say…
-            <br><br>
-            “We got this!”
-          </div>
-        </div>
-        <div>
-          <img
-            src="{{ url_for('static', filename='uploads//photoblank.png') }}"
-            alt="About me"
-            class="AboutImage"
-          />
-        </div>
-      </section>
-      <section class="divSubTitles">
-        <h3 class="subTitles">Experience</h3>
-        <span class="skillsdescription">
-          - Associate of Science in Information Technology <br />
-          - Bachelor of Science in Computer Information Systems <br />
-          - 4+ years in Software Development, Web Design, Marketing, and SEO Strategy <br />
-          - Experience building e-commerce platforms, mobile apps, and full-stack systems <br />
-          <br />
-          Within these years, I have: <br /><br />
-          - Designed and launched multiple successful brands and websites <br />
-          - Built the Lulu & Remi Shopify store, reaching $1.2K in sales during launch week <br />
-          - Developed a real-time AI translation tool that switches from PT to EN simultaneously for my global community.<br />
-          - Managed marketing strategies, content creation, and brand growth <br />
-          - Engineered scalable systems for clients using React, Django, Flask, and Next.js <br />
-        </span>
-
-        <h3 class="subTitles">Skills</h3>
-        <span class="skillsdescription">
-          <strong>Technical Skills:</strong><br /><br />
-          UI/UX Design / SEO Strategy / E-commerce Development / Shopify Integration / 
-          Product Management / Mobile App Development / Python / JavaScript / 
-          Next.js / React / React Native / Django / Flask / HTML / CSS / Web Design / 
-          Cloud Deployment (Vercel, Heroku) / Database Management (MySQL, PostgreSQL) /
-          API Integration / Marketing Strategy / Content Creation / Data Analytics
-          <br /><br />
-
-          <strong>Personal Skills:</strong><br /><br />
-          Photography / Jiu-Jitsu / Guitar / Community Building / Chess / Cooking /
-          Creative Problem-Solving / Leadership / Resilience / Public Communication
-        </span>
-        <div class="buttonbox">
-          <a
-            href="../static/uploads/Karinna Rocha Resume.pdf"
-            target="_blank"
-            class="button w-button"
-            >My CV</a
-          >
-        </div>
-      </section>
+      <div class="copyright">© | 2024</div>
     </div>
-    <!-- Footer -->
-  </body>
-  <footer class="Spacefooter">
-      <div class="flexLeftsideFooter">
-        <h2>Karinna Rocha</h2>
-        <h4>Full Stack developer with the creative mind of designing inovated and responsive softwares</h4>
+  </nav>
+
+  <div>
+    <section class="pagedivision">
+      <div class="Aboutmainbody">
+        <h1 class="Abouttitle animated-textUp">About</h1>
+        <h2 class="AboutSubtitle">
+          Hi! My name is Karinna, where designing creativity meets
+        </h2>
+
+        <div class="selfDescription aboutWrap">
+          <img src="{{ url_for('static', filename='uploads/photoblank.png') }}" alt="About me" class="AboutImage" />
+
+          Hi, I’m Karinna.
+
+          I’m a Full Stack developer, designer, and problem solver, driven by creativity and curiosity. I love creating
+          things that connect people, ideas, and technology.
+          <br /><br />
+          Moving to the United States and becoming the first in my family to earn an American degree pushed me to grow
+          in ways I never expected. It taught me resilience, adaptability, and the importance of believing in your own
+          path.
+          <br /><br />
+          Today I work across design, full-stack development, and digital strategy, combining creativity with technical
+          thinking to build meaningful projects and experiences.
+          <br /><br />
+          I focus on building organized, component-based systems with an emphasis on clean code, thoughtful design, and
+          maintainable architecture.
+          <br /><br />
+          Outside of technology, I’m also a Brazilian Jiu-Jitsu professor, and that discipline has deeply shaped how I
+          approach life and work.
+          <br /><br />
+          For me, building software, designing brands, and training Jiu-Jitsu all share something in common:
+          <br /><br />
+          They require discipline, creativity, and resilience.
+          <br /><br />
+          Every project I take on is an opportunity to create something meaningful, solve problems, and help others move
+          forward.
+          <br /><br />
+          And as I always say —
+          <br /><br />
+          <strong>“We got this.”</strong>
+        </div>
       </div>
-    </footer>
+    </section>
+
+    <section class="divSubTitles">
+      <h3 class="subTitles">Experience</h3>
+      <span class="skillsdescription">
+        - Associate of Science in Information Technology <br />
+        - Bachelor of Science in Computer Information Systems <br />
+        - 4+ years in Software Development, Web Design, Marketing, and SEO Strategy <br />
+        - Experience building e-commerce platforms, mobile apps, and full-stack systems <br />
+        <br />
+        Within these years, I have: <br /><br />
+        - Designed and launched multiple successful brands and websites <br />
+        - Built the Lulu & Remi Shopify store, reaching $1.2K in sales during launch week <br />
+        - Developed a real-time AI translation tool that switches from PT to EN simultaneously for my global
+        community.<br />
+        - Managed marketing strategies, content creation, and brand growth <br />
+        - Engineered scalable systems for clients using React, Django, Flask, and Next.js <br />
+      </span>
+
+      <h3 class="subTitles">Skills</h3>
+      <span class="skillsdescription">
+        <strong>Technical Skills:</strong><br /><br />
+        UI/UX Design / SEO Strategy / E-commerce Development / Shopify Integration /
+        Product Management / Mobile App Development / Python / JavaScript /
+        Next.js / React / React Native / Django / Flask / HTML / CSS / Web Design /
+        Cloud Deployment (Vercel, Heroku) / Database Management (MySQL, PostgreSQL) /
+        API Integration / Marketing Strategy / Content Creation / Data Analytics
+        <br /><br />
+
+        <strong>Personal Skills:</strong><br /><br />
+        Photography / Jiu-Jitsu / Guitar / Community Building / Chess / Cooking /
+        Creative Problem-Solving / Leadership / Resilience / Public Communication
+      </span>
+
+      <div class="buttonbox">
+        <a href="../static/uploads/Karinna Rocha Resume.pdf" target="_blank" class="button w-button">My CV</a>
+      </div>
+    </section>
+  </div>
+</body>
+
+<footer class="Spacefooter">
+  <div class="flexLeftsideFooter">
+    <h2>Karinna Rocha</h2>
+    <h4>Full Stack developer with the creative mind of designing inovated and responsive softwares</h4>
+  </div>
+</footer>
+
 </html>
